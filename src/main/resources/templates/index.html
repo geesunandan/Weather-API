@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:c="">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<h1> This is Another API</h1>
+<table width="100%">
+    <tr>
+        <th> Description</th>
+        <th> Temperature</th>
+        <th> Feels like</th>
+        <th> Wind speed</th>
+        <th> Country</th>
+    </tr>
+<tbody>
+    <tr>
+    <td th:text="${currentWeather.description}">Description</td>
+    <td th:text="${currentWeather.temp}">Temperature</td>
+    <td th:text="${currentWeather.feels_like}">Feels ike</td>
+    <td th:text="${currentWeather.wind_speed}">Wind Speed</td>
+    <td th:text="${currentWeather.country}"> Country </td>
+    </tr>
+
+
+    <tr>
+        <td th:text="${currentWeather.description}">Description</td>
+        <td th:text="${currentWeather.temp}">Temperature</td>
+        <td th:text="${currentWeather.feels_like}">Feels ike</td>
+        <td th:text="${currentWeather.wind_speed}">Wind Speed</td>
+        <td th:text="${currentWeather.country}"> Country </td>
+    </tr>
+</tbody>
+
+
+</table>
+
+
+</body>
+</html>
